@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Text colors */
+    --color-text-base: #111827;
+    --color-text-secondary: #000;
+    /* Background colors */
+    --color-bg-base: #f9fafb;
+    --color-bg-primary: #f1f1f1;
+    --color-bg-secondary: #fff;
+    --color-bg-tertiary: #f0f0f0;
+    --color-bg-light: #dcfce7;
+    --color-bg-success: #22c55e;
+
+    --color-primary: #f00;
+    --color-secondary: #f00f1f;
+    --color-text-muted: #6b7280;
+    --color-text-muted-light: #999;
+    --color-text-muted-dark: #333;
+    --color-text-muted-darker: #222;
+    --color-text-muted-darkest: #111;
+    --color-text-muted-lighter: #ccc;
+    --color-text-muted-lightest: #eee;
+    --color-text-inverted: #fdf8dd;
+    --color-text-inverted-light: #7e7aeb;
+    --color-text-inverted-dark: #3e38a5;
+    --color-fill: #4338ca;
+    --color-fill-light: #7e7aeb;
+    --color-fill-dark: #3e38a5;
+    --color-button-accent: #5cc96b;
+    --color-button-accent-hover: #38926e;
+    --color-button-accent-active: #e0e0e0;
+    --color-button-accent-disabled: #ccc;
+    --color-button-muted: #6366f0;
+  }
+  .theme-light {
+    --color-text-base: #111827;
+    --color-text-secondary: #000;
+    --color-bg-base: #000;
+    --color-bg-primary: #f1f1f1;
+    --color-bg-secondary: #fff;
+    --color-bg-tertiary: #f0f0f0;
+  }
+  .theme-dark {
+    --color-text-base: #000;
+    --color-text-secondary: #fff;
+    --color-bg-base: #fff;
+    --color-bg-primary: #333;
+    --color-bg-secondary: #22c55e;
+    --color-bg-tertiary: #222;
+    --color-bg-light: #fff;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  padding: 0 0;
+  margin: 0 0;
+  box-sizing: border-box;
+}
