@@ -1,13 +1,22 @@
-// import `createSignal` and `For`  from 'solid-js'below this line
-// import Book component below this line
-
+import { createSignal, For } from "solid-js";
+import Book from "./Book";
+import data from "../../database/data.json";
 function BookList() {
-
+  const [books] = createSignal(data.books);
   return (
     <section>
-      {/* // Enter the task 3 code below this line. */}
+      <For each={books()}>
+        {(book) => (
+          <Book
+            id={book.id}
+            title={book.title}
+            img={book.image}
+            excerpt={book.excerpt}
+            author={book.author}
+          />
+        )}
+      </For>
     </section>
   );
 }
 export default BookList;
-

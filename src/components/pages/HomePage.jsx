@@ -1,7 +1,8 @@
+import BookList from "../BookList";
 function HomePage() {
   return (
     <section className="mt-40">
-      Hello world! Bookstore Home Page
+      <BookList />
     </section>
   );
 }
